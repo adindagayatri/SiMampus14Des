@@ -1,0 +1,66 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginRegister.RegisterAdmin"
+    android:orientation="vertical"
+    android:background="@drawable/bg_login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="300dp"
+        android:layout_marginBottom="50dp">
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            app:mtf_labelColor="#805E5858">
+
+            <EditText
+                android:id="@+id/input_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:inputType="textCapWords"
+                android:textSize="15sp" />
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            app:mtf_labelColor="#805E5858">
+
+            <EditText
+                android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textSize="15sp" />
+        </com.github.florent37.materialtextfield.MaterialTextField>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register_admin"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="35dp"
+        android:background="@drawable/bg_btn"
+        android:text="Sign Up"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"/>
+
+</LinearLayout>

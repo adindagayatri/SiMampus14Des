@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Buku.EditBuku"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+            <EditText
+                android:id="@+id/txId_Edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kode Buku"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+            <EditText
+                android:id="@+id/txKode_Buku_Edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Judul Buku"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+            <EditText
+                android:id="@+id/txJudul_Buku_Edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Penulis"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+            <EditText
+                android:id="@+id/txPenulis_Buku_Edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Penerbit"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+            <EditText
+                android:id="@+id/txPenerbit_Buku_Edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tahun Terbit"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+            <EditText
+                android:id="@+id/txTahun_Terbit_Edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jumlah Halaman"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+            <EditText
+                android:id="@+id/txJumlah_Halaman_Edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rak Buku"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+            <EditText
+                android:id="@+id/txRak_Buku_Edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kategori"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+            <Spinner
+                android:id="@+id/spKategori_Edit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:entries="@array/kategori"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Masuk Buku"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+            <EditText
+                android:id="@+id/txTglMasuk_Buku_Edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:focusable="false"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
