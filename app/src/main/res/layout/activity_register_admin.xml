@@ -13,13 +13,13 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginTop="300dp"
-        android:layout_marginBottom="50dp">
+        android:layout_marginBottom="20dp">
 
         <com.github.florent37.materialtextfield.MaterialTextField
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="0dp"
             android:layout_marginRight="30dp"
             app:mtf_labelColor="#805E5858">
 
@@ -35,7 +35,7 @@
         <com.github.florent37.materialtextfield.MaterialTextField
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="0dp"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             app:mtf_labelColor="#805E5858">
@@ -58,9 +58,19 @@
         android:background="@drawable/bg_btn"
         android:text="Sign Up"
         android:textColor="#FFFFFF"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:textStyle="normal|bold"
         android:clickable="true"
         android:foreground="?android:attr/selectableItemBackground"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:id="@+id/login"
+        android:text="Sudah Punya Akun? Login Di sini!">
+    </TextView>
 
 </LinearLayout>
