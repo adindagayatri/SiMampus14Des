@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.e.simampuscrud.R;
@@ -15,6 +16,7 @@ public class RegisterAdmin extends AppCompatActivity {
     EditText mInputUsername, mInputPassword;
     Button btnSignup;
     DBHelperLogin dbHelper;
+    TextView btnlogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +26,7 @@ public class RegisterAdmin extends AppCompatActivity {
         dbHelper = new DBHelperLogin(this);
         mInputUsername = (EditText) findViewById(R.id.input_username);
         mInputPassword = (EditText) findViewById(R.id.input_password);
+        btnlogin = (TextView) findViewById(R.id.login);
         //mInputConfirmPass = (EditText) findViewById(R.id.input_conf_password);
         btnSignup = (Button) findViewById(R.id.register_admin);
         btnSignup.setOnClickListener(new View.OnClickListener() {
@@ -45,6 +48,13 @@ public class RegisterAdmin extends AppCompatActivity {
                 }else{
                     Toast.makeText(RegisterAdmin.this,"Wrong Password !",Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+        btnlogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(RegisterAdmin.this, LoginAdmin.class);
+                startActivity(intent);
             }
         });
     }
