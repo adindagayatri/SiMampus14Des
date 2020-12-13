@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.e.simampuscrud.MainActivity;
@@ -16,6 +17,7 @@ public class LoginAdmin extends AppCompatActivity {
     EditText mUsername, mPassword;
     Button btnLogin;
     DBHelperLogin dbHelper;
+    TextView btnRegister;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +28,7 @@ public class LoginAdmin extends AppCompatActivity {
         mUsername = (EditText) findViewById(R.id.admin_username);
         mPassword = (EditText) findViewById(R.id.admin_password);
         btnLogin = (Button) findViewById(R.id.login_admin);
+        btnRegister = (TextView) findViewById(R.id.regis);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,6 +43,14 @@ public class LoginAdmin extends AppCompatActivity {
                 }else{
                     Toast.makeText(LoginAdmin.this,"Login Error",Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+
+        btnRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginAdmin.this, RegisterAdmin.class);
+                startActivity(intent);
             }
         });
     }
